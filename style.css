@@ -1,0 +1,86 @@
+/*Determinando o container pai*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Melhorando o HTML da pagina*/
+html{
+    height: 100vh;
+    background-color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Cabeçalho*/
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.logo img{
+    width: 250px;
+    margin-left: 170px;
+}
+
+.header-menu{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 180px;
+}
+
+.list-itens{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.list-itens li{
+    transition: transform .2s ease-in;
+}
+
+.list-itens li:hover{
+    transform: scale(1.2);
+}
+
+.list-itens a{
+    text-decoration: none;
+    color: black;
+}
+
+.list-itens a:hover{
+    color: white;
+    transition: 0.3s all;
+}
+
+header, footer{
+    background-color: #084B8A;
+}
+
+/*Seção Rodapé*/
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 135px;
+    padding-bottom: 10px;
+}
+
+.footer img{
+    width: 100px;
+}
+
+.footer p{
+    margin-top: 10px;
+    text-align: center;
+    color: #000000;
+}

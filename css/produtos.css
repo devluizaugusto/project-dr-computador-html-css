@@ -1,0 +1,40 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    width: 80%;
+}
+
+.cards img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.itens{
+    flex-basis: calc(45% - 20px);
+    margin-bottom: 40px;
+    background-color: #FFFFFF;
+    text-align: center;
+    box-shadow: 0px 2px 5px #000000;
+    border-radius: 10px;
+    transition: transform .2s;
+}
+
+.itens:hover{
+    transform: scale(1.1);
+}
+
+.itens p{
+    padding: 10px 20px 20px;
+}
+
