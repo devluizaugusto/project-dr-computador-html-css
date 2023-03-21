@@ -33,7 +33,7 @@
             </nav>
         </header>
         <section class="contact">
-            <h2>Contato</h2>
+            <p>Entre em contato</p>
             <div class="area-form">
                 <div class="table">
                     <p>Horario de funcionamento e atendimento</p>
@@ -69,24 +69,24 @@
                     </table>
                 </div>
                 <div class="form">
-                    <form action="">
+                    <form onsubmit="event.preventDefault()">
                         <fieldset>
                             <label for="input-name">Nome</label>
-                            <input type="text" name="input-name" id="input-name">
+                            <input type="text" name="input-name" id="input-name" required minlength="2">
                         </fieldset>
                         <fieldset>
                             <label for="input-email">Email</label>
-                            <input type="email" name="input-email" id="input-email">
+                            <input type="email" name="input-email" id="input-email" required>
                         </fieldset>
                         <fieldset>
                             <label for="input-phone">Telefone</label>
-                            <input type="phone" name="input-phone" id="input-phone">
+                            <input type="phone" name="input-phone" id="input-phone" placeholder="(99) 99999-9999" required pattern="^\(\d{2}\) \d{5}-\d{4}$" maxlength="15">
                         </fieldset>
                         <fieldset>
                             <label for="input-message">Mensagem</label>
                             <textarea name="input-message" id="input-message" cols="30" rows="10"></textarea>
                         </fieldset>
-                            <input class="butn-submit" type="submit" value="Enviar">    
+                            <input class="butn-submit" type="submit" value="Enviar" onclick="enviarForm()">    
                     </form>
                 </div>
             </div>
@@ -97,5 +97,7 @@
                 <p>&#169; 2023 DR.Computador. Todos os direitos reservados.</p>
             </div>
         </footer>
+
+        <script src="../scripts/script-contato.js"></script>
     </body>
 </html>

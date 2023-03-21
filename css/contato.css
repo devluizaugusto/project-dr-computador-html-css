@@ -32,6 +32,13 @@ header, footer{
     margin-top: 30px;
     margin-bottom: 30px;
     width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact p{
+    font-size: 27px;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
 }
 
 .area-form{
@@ -77,17 +84,18 @@ tr, td{
 
 .butn-submit{
     color: #000000;
-    background: #FFFFFF;
+    background: #C0C0C0;
     font-weight: 700;
     font-size: 15px;
     padding: 10px 5px;
     line-height: 5px;
     margin-top: 15px;
     text-align: center;
-    width: 20%;
+    width: 30%;
     font-family: 'Roboto', sans-serif;
     cursor: pointer;
     transition: transform .2s;
+    border-radius: 20px;
 }
 
 .butn-submit:hover{
